@@ -11,7 +11,7 @@ A React-based e-commerce application that integrates a **GraphDB RDF database** 
    ```sh
    python Products.py
    ```
-2. Upload the generated **`Products.ttl`** and **`Shacl_shapes`** file to **GraphDB**.
+2. Upload the generated **`Products.ttl`** and **`Shacl_shapes`** files to **GraphDB**.
 3. Start the GraphDB server to enable the database.
 
 ---
