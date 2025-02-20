@@ -37,12 +37,12 @@ The application will be accessible at: `http://localhost:3000`
 The application comes with preconfigured user accounts:
 
 ### **👤 Normal User**
-- **Username:** `user1`
-- **Password:** `password1`
+- **Username:** `user`
+- **Password:** `password`
 
 ### **👑 Admin User**
-- **Username:** `admin1`
-- **Password:** `adminpass`
+- **Username:** `admin`
+- **Password:** `password`
 
 Admins have access to the **Dashboard** for managing products and orders.
 
