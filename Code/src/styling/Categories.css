@@ -1,0 +1,52 @@
+/* Categories Container Styling */
+.categories-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Categories Label */
+.categories-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #0d6efd;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Increase spacing between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  margin-top: 30px; /* Add spacing above the grid */
+}
+
+/* Category Buttons */
+.category-button {
+  background-color: #0d6efd;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  width: 220px; /* Fixed width */
+  height: 60px; /* Fixed height */
+  display: flex; /* Ensure content inside the button is centered */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.category-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}

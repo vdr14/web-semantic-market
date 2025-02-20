@@ -1,0 +1,181 @@
+/* General Dashboard Styling */
+.dashboard-page {
+    padding: 50px 30px; /* Increased padding */
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Header Styling */
+  .dashboard-header {
+    font-size: 36px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 50px; /* Increased spacing */
+    color: #0d6efd;
+    background-color: white;
+    padding: 20px 40px; /* Increased padding */
+    border-radius: 12px; /* More rounded corners */
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chart and Order List */
+  .dashboard-overview {
+    display: flex;
+    gap: 30px; /* Increased gap */
+    margin-bottom: 50px; /* Larger spacing below */
+  }
+  
+  .chart-container,
+  .order-list {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+    flex: 1;
+  }
+  
+  .chart-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px; /* Ensures it doesn't get too small on mobile */
+    max-width: 100%;
+  }
+  
+  
+  .chart-container h2 {
+    font-size: 26px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 30px; /* Increased margin */
+    text-align: center;
+  }
+  
+  .order-list h2 {
+    font-size: 26px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 30px; /* Increased margin */
+  }
+  
+  .order-item {
+    padding: 20px; /* Increased padding */
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px; /* Larger font size */
+    transition: background-color 0.2s ease;
+  }
+  
+  .order-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .order-item.selected {
+    background-color: #e0f7fa;
+    font-weight: bold;
+  }
+  
+  /* Selected Order */
+  .selected-order {
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+  }
+  
+  .selected-order h2 {
+    font-size: 26px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .selected-order ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .selected-order li {
+    padding: 15px 0; /* Increased padding */
+    font-size: 20px; /* Larger font size */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .selected-order li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Stock Filter Section */
+  .stock-filter {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding */
+  }
+  
+  .stock-filter h2 {
+    font-size: 26px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .stock-filter label {
+    font-weight: bold;
+    margin-right: 20px; /* Increased margin */
+    font-size: 18px; /* Larger font size */
+  }
+  
+  .stock-filter input {
+    padding: 12px; /* Increased padding */
+    width: 80px; /* Slightly larger input field */
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 18px; /* Larger font size */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .stock-filter ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .stock-filter li {
+    padding: 15px 0; /* Increased padding */
+    font-size: 20px; /* Larger font size */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .stock-filter li:last-child {
+    border-bottom: none;
+  }
+
+  .order-list ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Consistent spacing */
+    width: 100%;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-overview {
+      flex-direction: column;
+    }
+  
+    .chart-container,
+    .order-list {
+      margin-bottom: 30px;
+    }
+  
+    .stock-filter {
+      padding: 30px; /* Adjusted padding for smaller screens */
+    }
+  }
+  
