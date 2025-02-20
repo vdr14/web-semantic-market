@@ -61,7 +61,7 @@ Admins have access to the **Dashboard** for managing products and orders.
 - **Frontend:** React.js, Context API, React Router
 - **Backend:** GraphDB (SPARQL Queries)
 - **Database:** RDF Triple Store (Turtle Format)
-- **Styling:** CSS, Font Awesome
+- **Styling:** CSS
 - **Package Manager:** Yarn
 
 ---
