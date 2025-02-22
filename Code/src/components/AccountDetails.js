@@ -320,30 +320,32 @@ const AccountDetails = () => {
           )}
         </div>
 
-        {/* Order Details Modal */}
+      {/* Order Details Modal */}
         {isModalOpen && (
           <div className="modal-overlay">
             <div className="modal-content">
               <h2>Order Details (ID: {selectedOrder})</h2>
               {orderDetails.length > 0 ? (
-                <table className="order-details-table">
-                  <thead>
-                    <tr>
-                      <th>Product</th>
-                      <th>Quantity</th>
-                      <th>Price (€)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {orderDetails.map((item, index) => (
-                      <tr key={index}>
-                        <td>{item.productName}</td>
-                        <td>{item.quantity}</td>
-                        <td>{item.price}</td>
+                <div className="order-details-container">
+                  <table className="order-details-table">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price (€)</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {orderDetails.map((item, index) => (
+                        <tr key={index}>
+                          <td>{item.productName}</td>
+                          <td>{item.quantity}</td>
+                          <td>{item.price}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               ) : (
                 <p>No products found in this order.</p>
               )}
