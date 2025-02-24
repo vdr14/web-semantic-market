@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dedddd;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  width: 100%;
+  height: 30px;
+}
+
+.header i {
+  color:#007bff;
+  font-size : 20px;
+}
+
+.logo, .account, .cart, .search input {
+  font-size: 20px; /* Set the desired font size */
+  font-weight: 500; /* Optional: Makes text slightly bold */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #01060a; /*color for the logo */
+  display : flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  margin-left: 20px; /* Prevent from touching the edge */
+}
+
+.search {
+  flex: 1; /* Takes up available space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and input */
+
+}
+
+.search input {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.account, .cart, .user-logged-in {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and icon */
+  margin-right: 20px; /* Prevent from touching the edge */ 
+}
+
+.account span, .cart span {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #01060a; /*color for account and cart */
+  font-weight: 500;
+}
+
+.logo span{
+  cursor: pointer;
+}
+
+.account span:hover, .cart span:hover, .logo span:hover {
+  text-decoration: underline;
+}
+
+/* User Logged In Section */
+.user-logged-in {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between username and logout button */
+  margin-right: 20px;
+}
+
+.user-logged-in span {
+  cursor: pointer;
+  color: #01060a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 23px;
+
+}
+
+.user-logged-in span:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+/* Log out button styling */
+.user-logged-in button {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  padding: 8px 16px; /* Comfortable padding */
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: white; /* White text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.user-logged-in button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.user-logged-in button:active {
+  background-color: #004494;
+  transform: translateY(0);
+}
+
+
+.cart-header-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4444;
+  color: white;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  padding: 2px;
+  border: 2px solid white;
+}

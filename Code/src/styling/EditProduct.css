@@ -1,0 +1,130 @@
+/* General Styling for Edit Product Page */
+.edit-product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    min-height: 80vh;
+}
+
+/* Page Title */
+.edit-product-page h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #0d6efd;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.edit-product-page form {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds spacing between form elements */
+}
+
+/* Input Fields */
+.edit-product-page input,
+.edit-product-page select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit-product-page input:focus,
+.edit-product-page select:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+/* Labels */
+.edit-product-page label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Buttons */
+.edit-product-page .save-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.edit-product-page .save-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.edit-product-page .cancel-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    background-color: #dc8e35;
+}
+
+.edit-product-page .cancel-btn:hover {
+    background-color: #b0882a;
+    transform: translateY(-2px);
+}
+
+/* Delete Button */
+.edit-product-page .delete-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    background-color: #ff4d4d;
+}
+
+.edit-product-page .delete-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .edit-product-page form {
+        width: 90%;
+        padding: 20px;
+    }
+}
